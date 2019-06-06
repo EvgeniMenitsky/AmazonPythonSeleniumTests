@@ -9,7 +9,6 @@ import pytest
 
 
 class TestShopCart(BaseTest):
-    @pytest.mark.parametrize("category_name,order_name", [("Books", "Harry Potter"), ("Computers", "Macbook pro")])
     def test_put_order_to_shopcart(self):
         self.logger.log_step(1, 'Search Order')
         search_form = SearchForm()

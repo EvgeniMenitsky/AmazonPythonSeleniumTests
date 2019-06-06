@@ -5,7 +5,7 @@ import pytest
 
 
 class TestSearchOrder(BaseTest):
-    @pytest.mark.parametrize("category_name,order_name, lang", "condition", "sort_name",
+    @pytest.mark.parametrize("category_name,order_name, lang, condition, sort_name",
                              [("Books", "The Great Gatsby", "English", "New", "Price: Low to High"),
                               ("Computers", "Macbook pro", "English", "New", "Price: Low to High")])
     def test_search_order(self, category_name, order_name, lang, condition, sort_name):
